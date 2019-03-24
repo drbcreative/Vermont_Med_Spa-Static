@@ -3,3 +3,6 @@
 
 #Don't include XD files
 *.xd
+
+#Don't include codeKit files
+*.codekit3
