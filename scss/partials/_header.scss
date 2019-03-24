@@ -1,7 +1,59 @@
 /* -------------------------------------------------------------------------- */
-/* NAVBAR STYLES */
+/* HEADER */
 /* -------------------------------------------------------------------------- */
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
 
+/* -------------------------------------------------------------------------- */
+/* TOP BAR */
+/* -------------------------------------------------------------------------- */
+.topbar {
+  width: 100%;
+  height: auto;
+  // padding: .3rem 0;
+  background-color: $color-light-accent;
+
+  .active {
+    background-color: $color-main;
+    display: inline-block;
+    padding: 0.4rem 0.3rem;
+  }
+
+  .top-location {
+    font-family: $font-primary;
+    font-size: 15px;
+    color: $color-light;
+  }
+
+  .top-link {
+    font-family: $font-primary;
+    font-size: 15px;
+    color: $color-light;
+    margin-right: 0.5rem;
+
+    @media screen and (min-width: 992px) {
+      margin-right: 1rem;
+    }
+  }
+
+  .top-location:hover,
+  .top-link:hover {
+    color: $color-dark;
+    text-decoration: none;
+  }
+
+  .top-link:last-child {
+    margin-right: 0;
+    padding-right: 0 !important;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* NAVBAR */
+/* -------------------------------------------------------------------------- */
 .navbar {
   // background: $color-main;
   z-index: 10;
