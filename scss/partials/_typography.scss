@@ -1,0 +1,167 @@
+/* -------------------------------------------------------------------------- */
+/* Typography */
+/* -------------------------------------------------------------------------- */
+@import "https://use.fontawesome.com/releases/v5.4.1/css/all.css";
+@import url("https://fonts.googleapis.com/css?family=Assistant:300,400,600,700|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700");
+
+$font-primary: "Assistant", sans-serif;
+$font-secondary: "Playfair Display", serif;
+$font-tertiary: "Montserrat", sans-serif;
+
+// General Font Setup
+// Headers
+/* Primary Header */
+h1 {
+  font-family: $font-secondary;
+  font-size: 3.4375rem; // 55px
+  line-height: 3.4375rem;
+
+  &.is-light {
+    font-weight: 300;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
+
+  &.is-italic {
+    font-style: italic;
+  }
+}
+
+h2 {
+  font-family: $font-secondary;
+  font-size: 3.125rem; // 50px
+  line-height: 3.125rem;
+  font-weight: 300;
+
+  &.is-light {
+    font-weight: 300;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
+
+  &.is-italic {
+    font-style: italic;
+  }
+}
+
+h3 {
+  font-family: $font-tertiary;
+  font-size: 0.9375rem; // 15px
+  line-height: 0.9375rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* All Other Headers */
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+  font-weight: 400;
+}
+.blog-header {
+  font-family: $font-secondary;
+  font-size: 80px;
+  line-height: 88px;
+  &.is-light {
+    font-weight: 300;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
+
+  &.is-italic {
+    font-style: italic;
+  }
+}
+.footer-header {
+  font-family: $font-secondary;
+  font-size: 25px;
+  line-height: 25px;
+  &.is-light {
+    font-weight: 300;
+  }
+  &.is-bold {
+    font-weight: 700;
+  }
+  &.is-italic {
+    font-style: italic;
+  }
+}
+
+//Body Text
+.body-copy {
+  font-size: 1.25; // 20px
+  line-height: calc(1.25rem * 2);
+  font-family: $font-primary;
+
+  &.is-light {
+    font-weight: 300;
+  }
+  &.is-bold {
+    font-weight: 700;
+  }
+}
+
+/* Lead Text (hero) */
+.lead-copy {
+  font-family: $font-primary;
+  font-size: 1.25rem; // 20px
+  line-height: 40px;
+  font-weight: 300;
+}
+
+/* Footer2 Text */
+.small-copy {
+  font-size: 16px;
+  line-height: 22.5px;
+  font-family: $font-primary;
+
+  &.is-light {
+    font-weight: 300;
+  }
+  &.is-bold {
+    font-weight: 700;
+  }
+}
+
+/* Text Modifiers */
+.wrap-75 {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+input {
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+// Font Size Breakpoints
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 200% !important;
+
+    .subscript {
+      font-size: 1.2rem;
+    }
+  }
+
+  h2 {
+    font-size: 200%;
+  }
+
+  h1 {
+    line-height: 2rem;
+  }
+
+  h2,
+  h3 {
+    line-height: 2rem;
+  }
+}

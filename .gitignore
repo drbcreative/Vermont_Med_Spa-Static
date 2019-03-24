@@ -1,0 +1,5 @@
+#Don't include assets folder
+/Assets
+
+#Don't include XD files
+*.xd
