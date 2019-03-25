@@ -5,28 +5,113 @@
   width: 100%;
   height: auto;
   padding: 0;
-
-  @media screen and (min-width: 992px) {
-    max-width: 95%;
-    height: auto;
-    margin: 0 auto;
-  }
 }
 /* -------------------------------------------------------------------------- */
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
+.hero {
+  overflow: hidden;
+  position: relative;
+  .slide {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    .content-wrapper {
+      width: 100%;
+      height: auto;
+      max-width: 1300px;
+      margin: 0 auto;
+
+      padding: 40px 20px;
+      display: grid;
+
+      p {
+        max-width: 420px;
+      }
+    }
+
+    &.slide-1 {
+      background: url("../../img/hero-1@2x.jpg") center left / cover;
+    }
+    &.slide-2 {
+      background: url("../../img/hero-1@2x.jpg") center left / cover;
+    }
+  }
+}
 /* -------------------------------------------------------------------------- */
 /* EVENT SECTION */
 /* -------------------------------------------------------------------------- */
+.event-banner {
+  width: 100%;
+  height: 33px;
+  background-color: $color-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
 /* -------------------------------------------------------------------------- */
 /* BIO SECTION */
 /* -------------------------------------------------------------------------- */
+.bio {
+  background-image: radial-gradient(#ffffff, #f5f5f6);
+  padding: 40px 20px;
+  .containerish {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+  }
+  img {
+    margin-bottom: 2rem;
+  }
+}
 /* -------------------------------------------------------------------------- */
 /* SEARCH SECTION */
 /* -------------------------------------------------------------------------- */
+.search {
+  padding: 40px 20px;
+
+  .containerish {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .form-control {
+      border-radius: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control:not(button) {
+      border: 1px solid #ededed;
+    }
+
+    ::placeholder {
+      color: #3e3a42;
+      font-family: $font-primary;
+      font-size: 15px;
+    }
+  }
+}
 /* -------------------------------------------------------------------------- */
 /* SMART LIPO SECTION */
 /* -------------------------------------------------------------------------- */
+.smart-lipo {
+  padding: 0 20px 40px 20px;
+  background: url("../../img/smart-lipo-bg@2x.jpg") center / cover;
+  .containerish {
+    display: grid;
+  }
+}
 /* -------------------------------------------------------------------------- */
 /* MORPHEUS SECTION */
 /* -------------------------------------------------------------------------- */

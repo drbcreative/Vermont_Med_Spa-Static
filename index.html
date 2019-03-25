@@ -7,6 +7,8 @@
     <title>Vermont Med Spa</title>
 
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/vendor/db-animate.min.css" />
     <link rel="stylesheet" href="css/theme.min.css" />
   </head>
@@ -14,26 +16,268 @@
   <body>
     <header>
       <!-- topbar -->
+      <div class="topbar">
+        <div class="containerish">
+          <div class="col-left">
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link"><i class="fab fa-yelp"></i></a>
+            <a href="#" class="social-link"
+              ><p>Translate</p>
+              <i class="fas fa-globe"></i
+            ></a>
+          </div>
+          <div class="col-mid">
+            <a href="#" class="topbar-link color-white">
+              Get 25% off of Smart Lipo now through June 30th
+            </a>
+          </div>
+          <div class="col-right">
+            <a href="#" class="topbar-link">Events</a>
+            <a href="#" class="topbar-link">Promotions</a>
+            <a href="#" class="topbar-link">Blog</a>
+            <a href="tel:213-335-3542" class="topbar-link">(213) 335-3542</a>
+          </div>
+        </div>
+      </div>
       <!-- /topbar -->
 
       <!-- navbar -->
+      <div class="navbar-wrapper">
+        <div class="logo-desktop">
+          <img src="img/logo@2x.png" alt="" />
+        </div>
+        <div class="containerish">
+          <nav class="navbar navbar-expand-lg navbar-light px-lg-0">
+            <a
+              href="index.html"
+              class="navbar-brand color-light-accent h1 mb-0"
+            >
+              <img
+                class="nav-logo d-block d-xl-none"
+                src="img/logo-color-main@2x.png"
+                alt=""
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#main-nav"
+              aria-controls="main-nav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+              <div class="navbar-nav ml-auto px-0">
+                <span class="nav-item dropdown">
+                  <a href="#" class="nav-link" role="button">ABOUT</a>
+                </span>
+                <span
+                  class="nav-item nav-divider d-none d-lg-inline-flex"
+                ></span>
+                <span class="nav-item dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    id="aboutdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    >CONCERNS</a
+                  >
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Sub-Link</a>
+                    <a href="#" class="dropdown-item">Sub-Link</a>
+                    <a href="#" class="dropdown-item">Sub-Link</a>
+                    <a href="#" class="dropdown-item">Sub-Link</a>
+                    <a href="#" class="dropdown-item">Sub-Link</a>
+                  </div>
+                </span>
+                <span
+                  class="nav-item nav-divider d-none d-lg-inline-flex"
+                ></span>
+                <span class="nav-item dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    id="aboutdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    >TREATMENTS</a
+                  >
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Sub-Link</a>
+                    <a href="#" class="dropdown-item">Sub-Link</a>
+                    <a href="#" class="dropdown-item">Sub-Link</a>
+                    <a href="#" class="dropdown-item">Sub-Link</a>
+                    <a href="#" class="dropdown-item">Sub-Link</a>
+                  </div>
+                </span>
+                <span
+                  class="nav-item nav-divider d-none d-lg-inline-flex"
+                ></span>
+                <span class="nav-item">
+                  <a href="#" class="nav-link" role="button">RESULTS</a>
+                </span>
+                <span
+                  class="nav-item nav-divider d-none d-lg-inline-flex"
+                ></span>
+                <span class="nav-item">
+                  <a href="#" class="nav-link" role="button">PATIENT INFO</a>
+                </span>
+                <span
+                  class="nav-item nav-divider d-none d-lg-inline-flex"
+                ></span>
+                <span class="nav-item">
+                  <a href="#" class="nav-link" role="button"
+                    >REQUEST APPOINTMENT</a
+                  >
+                </span>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
       <!-- /navbar -->
     </header>
 
     <main>
       <!-- hero slider -->
+      <section class="hero">
+        <div class="slide slide-1">
+          <div class="content-wrapper">
+            <div class="slide-info">
+              <h3 class="color-light-accent">
+                RF MICRONEEDLING
+              </h3>
+              <h2 class="color-dark">
+                Flawless Skin Tone
+              </h2>
+              <p class="body-copy color-dark">
+                Welcome text ut imperdiet ac ante vitae tincidunt. In convallis
+                ut metus quis congue. Lut lacus in arcu ornare mollis.
+              </p>
+              <div class="ui-btn-group">
+                <a href="#" class="ui-btn ui-btn-main">LEARN MORE</a>
+                <a href="#" class="ui-btn ui-btn-light-accent"
+                  >REQUEST APPOINTMENT</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-2">
+          <div class="content-wrapper">
+            <div class="slide-info">
+              <h3 class="color-light-accent">
+                RF MICRONEEDLING
+              </h3>
+              <h2 class="color-dark">
+                Flawless Skin Tone
+              </h2>
+              <p class="body-copy color-dark">
+                Welcome text ut imperdiet ac ante vitae tincidunt. In convallis
+                ut metus quis congue. Lut lacus in arcu ornare mollis.
+              </p>
+              <div class="ui-btn-group">
+                <a href="#" class="ui-btn ui-btn-main">LEARN MORE</a>
+                <a href="#" class="ui-btn ui-btn-light-accent"
+                  >REQUEST APPOINTMENT</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- /hero slider -->
 
       <!-- event -->
+      <section class="event-banner">
+        <a href="#">
+          <p class="small-copy is-semibold color-dark-accent">
+            JOIN US FOR OUR UPCOMING FORMA EVENT: JULY 10TH!
+          </p>
+        </a>
+      </section>
       <!-- /event -->
 
       <!-- dr bio -->
+      <section class="bio">
+        <div class="containerish">
+          <img src="img/dr-bio@2x.jpg" class="img-border img-shadow" alt="" />
+          <div class="section-info">
+            <h3 class="color-light-accent">
+              ABOUT OUR PRACTICE
+            </h3>
+            <h2 class="color-dark">
+              Imad El Asmar, MD
+            </h2>
+            <p class="body-copy color-dark">
+              Short bio of Dr. Imad El Asmar, MD dolor sit amet, consetetur
+              sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+              accusam et justo duo dolores et ea rebum. Stet clita kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Lorem ipsum dolor sit amet, vero eos consetetur.
+            </p>
+            <div class="ui-btn-group">
+              <a href="#" class="ui-btn ui-btn-main">LEARN MORE</a>
+              <a href="#" class="ui-btn ui-btn-light-accent"
+                >REQUEST APPOINTMENT</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- /dr bio -->
 
       <!-- search -->
+      <section class="search">
+        <form class="containerish">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search the concerns we treat"
+          />
+          <button class="form-control ui-btn ui-btn-main" type="submit">
+            SEARCH
+          </button>
+        </form>
+      </section>
       <!-- /search -->
 
       <!-- smart lipo -->
+      <section class="smart-lipo">
+        <div class="containerish">
+          <img src="img/smart-lipo@2x.png" class="" alt="" />
+          <div class="section-info">
+            <h3 class="color-light-accent">
+              LOVE THE NEW YOU
+            </h3>
+            <h2 class="color-dark">
+              Smart Lipo
+            </h2>
+            <p class="body-copy color-dark">
+              Description of Smart Lipo dolor sit amet, consetetur sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+              takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+              sit amet, vero eos clita kasd consetetur.
+            </p>
+            <div class="ui-btn-group">
+              <a href="#" class="ui-btn ui-btn-main">LEARN MORE</a>
+              <a href="#" class="ui-btn ui-btn-light-accent"
+                >REQUEST APPOINTMENT</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- /smart lipo -->
 
       <!-- morpheus -->
@@ -66,6 +310,8 @@
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/bootstrap.bundle.min.js"></script>
     <script src="js/vendor/db-animate.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="js/app-min.js"></script>
+    <script src="js/slider-init.min.js"></script>
   </body>
 </html>

@@ -14,7 +14,7 @@
 }
 
 /* -------------------------------------------------------------------------- */
-/* MEDIUM BREAKPOINT (Tablets 768px and u) */
+/* MEDIUM BREAKPOINT (Tablets 768px and up) */
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .ui-btn {
@@ -22,10 +22,93 @@
     width: auto;
   }
   /* HERO ********************************************************* */
+  .hero {
+    overflow: hidden;
+    position: relative;
+    .slide {
+      height: 500px;
+      .content-wrapper {
+        width: 100%;
+        height: auto;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        display: grid;
+      }
+    }
+  }
   /* EVENT ******************************************************** */
+  .event-banner {
+    p {
+      margin-bottom: 0;
+      padding: 0;
+      letter-spacing: 0.2rem;
+    }
+  }
   /* BIO ********************************************************** */
+  .bio {
+    background-image: radial-gradient(#ffffff, #f5f5f6);
+    padding: 40px 20px;
+    .containerish {
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 2rem;
+      align-items: center;
+    }
+  }
   /* SEARCH ******************************************************* */
+  .search {
+    padding: 40px 20px;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      grid-column-gap: 1rem;
+
+      .form-control {
+        margin-bottom: 0;
+      }
+
+      form {
+        input {
+          grid-column: 1 / 2;
+        }
+        button {
+          grid-column: 2 / 3;
+        }
+      }
+    }
+  }
   /* SMART LIPO *************************************************** */
+  .smart-lipo {
+    padding: 0 20px !important;
+    background: url("../../img/smart-lipo-bg@2x.jpg") center / cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    .containerish {
+      display: grid;
+      height: inherit;
+      max-width: 1200px;
+      margin: 0 auto;
+      grid-template-columns: 55% 1fr;
+      grid-column-gap: 1rem;
+      align-items: center;
+      position: relative;
+
+      img {
+        grid-column: 2 / 3;
+        position: absolute;
+        right: -20px;
+        bottom: 0;
+        width: 440px;
+      }
+      .section-info {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        // padding: 4rem;
+      }
+    }
+  }
   /* MORPHEUS ***************************************************** */
   /* NEWSLETTER *************************************************** */
   /* FORMA ******************************************************** */
@@ -41,11 +124,102 @@
   .dropdown:hover > .dropdown-menu {
     display: block;
   }
+  .containerish {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  /* HEADER ******************************************************* */
+
+  .topbar {
+    .containerish {
+      display: grid;
+      grid-template-columns: max-content 1fr max-content;
+      padding: 0.2rem 0rem;
+
+      p {
+        margin: 0 !important;
+      }
+
+      .col-mid {
+        width: 100%;
+        display: block;
+        display: flex;
+        justify-content: center;
+      }
+      .col-right {
+        .topbar-link {
+          margin-right: 1rem;
+          display: inline-block;
+        }
+        .topbar-link:last-child {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+  .navbar {
+    .nav-logo {
+      max-width: 175px;
+    }
+  }
   /* HERO ********************************************************* */
+  .hero {
+    overflow: hidden;
+    position: relative;
+    .slide {
+      height: 500px;
+      .content-wrapper {
+        grid-template-columns: 50px 2fr 1fr;
+
+        .slide-info {
+          grid-column: 2 / 3;
+        }
+      }
+    }
+  }
   /* EVENT ******************************************************** */
   /* BIO ********************************************************** */
+  .bio {
+    background-image: radial-gradient(#ffffff, #f5f5f6);
+    padding: 60px 20px;
+    .containerish {
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 4rem;
+      align-items: center;
+    }
+  }
   /* SEARCH ******************************************************* */
   /* SMART LIPO *************************************************** */
+  .smart-lipo {
+    padding: 0 20px !important;
+    background: url("../../img/smart-lipo-bg@2x.jpg") center / cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    .containerish {
+      display: grid;
+      height: inherit;
+      max-width: 1200px;
+      margin: 0 auto;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 1rem;
+      align-items: center;
+      position: relative;
+
+      img {
+        grid-column: 2 / 3;
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+        width: 460px;
+      }
+      .section-info {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        // padding: 4rem;
+      }
+    }
+  }
   /* MORPHEUS ***************************************************** */
   /* NEWSLETTER *************************************************** */
   /* FORMA ******************************************************** */
@@ -58,11 +232,86 @@
 /* EXTRA LARGE BREAKPOINT (Large Desktops 1200px and up) */
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
+  /* HEADER ******************************************************* */
+  .navbar-wrapper {
+    .logo-desktop {
+      display: block;
+      width: 30%;
+      height: 123px;
+      background-image: radial-gradient(#a04f8a, #642853);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 25;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
   /* HERO ********************************************************* */
+  .hero {
+    overflow: hidden;
+    position: relative;
+    .slide {
+      height: 500px;
+      .content-wrapper {
+        grid-template-columns: 75px 2fr 1fr;
+
+        .slide-info {
+          grid-column: 2 / 3;
+        }
+      }
+    }
+  }
   /* EVENT ******************************************************** */
   /* BIO ********************************************************** */
+  .bio {
+    background-image: radial-gradient(#ffffff, #f5f5f6);
+    padding: 60px 20px;
+    .containerish {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 4rem;
+      align-items: center;
+    }
+  }
   /* SEARCH ******************************************************* */
   /* SMART LIPO *************************************************** */
+  .smart-lipo {
+    padding: 0 20px !important;
+    background: url("../../img/smart-lipo-bg@2x.jpg") center / cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    .containerish {
+      display: grid;
+      height: inherit;
+      max-width: 1200px;
+      margin: 0 auto;
+      grid-template-columns: 55% 1fr;
+      grid-column-gap: 1rem;
+      align-items: center;
+      position: relative;
+
+      img {
+        grid-column: 2 / 3;
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+        width: 460px;
+      }
+      .section-info {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        padding-left: 4rem;
+      }
+    }
+  }
   /* MORPHEUS ***************************************************** */
   /* NEWSLETTER *************************************************** */
   /* FORMA ******************************************************** */
@@ -74,7 +323,15 @@
 /* MACBOOK PRO 15" BREAKPOINT (Large Desktops 1400px and up) */
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 1400px) {
+  /* HEADER ******************************************************* */
+  .topbar {
+    .containerish {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
   /* HERO ********************************************************* */
+
   /* EVENT ******************************************************** */
   /* BIO ********************************************************** */
   /* SEARCH ******************************************************* */
