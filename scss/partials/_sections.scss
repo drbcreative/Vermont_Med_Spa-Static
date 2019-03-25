@@ -3,6 +3,8 @@
 /* -------------------------------------------------------------------------- */
 .containerish {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   height: auto;
   padding: 0;
 }
@@ -115,9 +117,47 @@
 /* -------------------------------------------------------------------------- */
 /* MORPHEUS SECTION */
 /* -------------------------------------------------------------------------- */
+.morpheus {
+  background: $color-dark;
+  padding: 40px 20px;
+
+  .containerish {
+    display: grid;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+  }
+}
 /* -------------------------------------------------------------------------- */
 /* NEWSLETTER SECTION */
 /* -------------------------------------------------------------------------- */
+.newsletter {
+  padding: 40px 20px;
+  min-height: 200px;
+  background: url("../../img/newsletter-bg@2x.jpg") center / cover;
+  align-items: center;
+  .containerish {
+    display: grid;
+    h3,
+    h2 {
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 1rem;
+    }
+    .form-control {
+      margin-bottom: 0.5rem;
+      border-radius: 0;
+    }
+    .form-control:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 /* -------------------------------------------------------------------------- */
 /* FORMA SECTION */
 /* -------------------------------------------------------------------------- */
