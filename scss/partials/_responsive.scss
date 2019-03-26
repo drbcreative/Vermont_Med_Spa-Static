@@ -183,8 +183,72 @@
     }
   }
   /* FORMA ******************************************************** */
+  .forma {
+    padding: 0;
+    .containerish {
+      height: 65vh;
+      background: url("../../img/form-bg@2x.jpg") center / cover;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      .section-info {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba($color-white, 0.95);
+        height: auto;
+        width: 85%;
+
+        p {
+          text-align: center;
+        }
+
+        .ui-btn {
+          flex: 1;
+          padding: 0.8rem 1.5rem;
+        }
+      }
+    }
+  }
   /* TESTIMONIALS ************************************************* */
   /* APPOINTMENTS ************************************************* */
+  .appointments {
+    padding-top: 15rem;
+    .appointment-wrapper {
+      #appointment-form {
+        padding: 8% 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+
+        input:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+
+        button {
+          grid-column: 1 / 3;
+          margin-bottom: 0;
+          margin-top: 1.5rem;
+          justify-self: center;
+          padding: 0.8rem 1.5rem;
+        }
+      }
+
+      .care-logo {
+        margin-top: 3rem;
+        max-width: 400px;
+      }
+      #financing {
+        margin: 1rem 0 2rem 0;
+      }
+    }
+    .ui-btn {
+      padding: 0.8rem 1.5rem;
+    }
+  }
   /* FOOTER ******************************************************* */
 }
 
@@ -319,9 +383,31 @@
   }
   /* NEWSLETTER *************************************************** */
   /* FORMA ******************************************************** */
+  .forma {
+    padding: 5% 0;
+    .containerish {
+      height: 680px;
+
+      .section-info {
+        padding: 40px 20px;
+        width: 85%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
   /* TESTIMONIALS ************************************************* */
   /* APPOINTMENTS ************************************************* */
   /* FOOTER ******************************************************* */
+  footer {
+    .footer-1 {
+      .containerish {
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 4rem;
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -438,6 +524,17 @@
   }
   /* NEWSLETTER *************************************************** */
   /* FORMA ******************************************************** */
+  .forma {
+    padding: 5% 0;
+    .containerish {
+      height: 780px;
+
+      .section-info {
+        padding: 40px 20px;
+        width: 85%;
+      }
+    }
+  }
   /* TESTIMONIALS ************************************************* */
   /* APPOINTMENTS ************************************************* */
   /* FOOTER ******************************************************* */
@@ -489,7 +586,19 @@
   }
   /* NEWSLETTER *************************************************** */
   /* FORMA ******************************************************** */
+  .forma {
+    padding: 5% 0;
+    .containerish {
+      height: 880px;
+
+      .section-info {
+        padding: 40px 4rem;
+        width: 65%;
+      }
+    }
+  }
   /* TESTIMONIALS ************************************************* */
+
   /* APPOINTMENTS ************************************************* */
   /* FOOTER ******************************************************* */
 }
@@ -506,6 +615,17 @@
   /* MORPHEUS ***************************************************** */
   /* NEWSLETTER *************************************************** */
   /* FORMA ******************************************************** */
+  .forma {
+    padding: 5% 0;
+    .containerish {
+      height: 980px;
+
+      .section-info {
+        padding: 40px 8rem;
+        width: 50%;
+      }
+    }
+  }
   /* TESTIMONIALS ************************************************* */
   /* APPOINTMENTS ************************************************* */
   /* FOOTER ******************************************************* */
