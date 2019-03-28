@@ -81,7 +81,7 @@
   /* SMART LIPO *************************************************** */
   .smart-lipo {
     padding: 0 20px !important;
-    background: url("../../img/smart-lipo-bg@2x.jpg") center / cover;
+    background: url("../img/smart-lipo-bg@2x.jpg") center / cover;
     height: 600px;
     display: flex;
     align-items: center;
@@ -100,7 +100,7 @@
         position: absolute;
         right: -20px;
         bottom: 0;
-        width: 440px;
+        width: 380px;
       }
       .section-info {
         grid-column: 1 / 2;
@@ -187,7 +187,7 @@
     padding: 0;
     .containerish {
       height: 65vh;
-      background: url("../../img/form-bg@2x.jpg") center / cover;
+      background: url("../img/form-bg@2x.jpg") center / cover;
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -214,6 +214,42 @@
     }
   }
   /* TESTIMONIALS ************************************************* */
+  .testimonials {
+    padding: 40px 20px 0 20px;
+    height: 800px;
+
+    .containerish {
+      img {
+        margin-bottom: 2rem;
+      }
+      .testimonial-container {
+        display: flex;
+        flex-direction: column;
+
+        .testimonial {
+          .stars {
+            max-width: 50%;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+    /* LATEST BLOG */
+    .blog-post {
+      background: url("../img/blog-img@2x.jpg") center / cover;
+      padding: 2rem 1rem;
+      width: 560px;
+      margin: 0 auto;
+      margin-top: 2rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      p.blog-title {
+        margin: 2rem 0;
+      }
+    }
+  }
   /* APPOINTMENTS ************************************************* */
   .appointments {
     padding-top: 15rem;
@@ -242,7 +278,7 @@
         max-width: 400px;
       }
       #financing {
-        margin: 1rem 0 2rem 0;
+        margin: 2rem 0 2rem 0;
       }
     }
     .ui-btn {
@@ -256,6 +292,16 @@
 /* LARGE BREAKPOINT (Desktops 992px and up) */
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 992px) {
+  .ui-btn {
+    display: inline-flex;
+    width: auto;
+    padding: 0.8rem 0.5rem;
+    width: 225px;
+  }
+  h2,
+  h3 {
+    margin-bottom: 1.5rem;
+  }
   .dropdown:hover > .dropdown-menu {
     display: block;
   }
@@ -302,7 +348,7 @@
     overflow: hidden;
     position: relative;
     .slide {
-      height: 500px;
+      height: 700px;
       .content-wrapper {
         grid-template-columns: 50px 2fr 1fr;
 
@@ -313,6 +359,11 @@
     }
   }
   /* EVENT ******************************************************** */
+  .event-banner {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0;
+  }
   /* BIO ********************************************************** */
   .bio {
     background-image: radial-gradient(#ffffff, #f5f5f6);
@@ -327,8 +378,8 @@
   /* SMART LIPO *************************************************** */
   .smart-lipo {
     padding: 0 20px !important;
-    background: url("../../img/smart-lipo-bg@2x.jpg") center / cover;
-    height: 600px;
+    background: url("../img/smart-lipo-bg@2x.jpg") center / cover;
+    height: 720px;
     display: flex;
     align-items: center;
     .containerish {
@@ -396,6 +447,42 @@
     }
   }
   /* TESTIMONIALS ************************************************* */
+  .testimonials {
+    padding: 40px 20px 0 20px;
+    height: 800px;
+
+    .containerish {
+      img {
+        margin-bottom: 2rem;
+      }
+      .testimonial-container {
+        display: flex;
+        flex-direction: column;
+
+        .testimonial {
+          .stars {
+            max-width: 50%;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+    /* LATEST BLOG */
+    .blog-post {
+      background: url("../img/blog-img@2x.jpg") center / cover;
+      padding: 2rem 1rem;
+      width: 860px;
+      margin: 0 auto;
+      margin-top: 4rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      p.blog-title {
+        margin: 2rem 0;
+      }
+    }
+  }
   /* APPOINTMENTS ************************************************* */
   /* FOOTER ******************************************************* */
   footer {
@@ -420,7 +507,7 @@
       display: block;
       width: 30%;
       height: 123px;
-      background-image: radial-gradient(#a04f8a, #642853);
+      background-image: radial-gradient(#db7ca4, #c86d94);
       position: absolute;
       top: 0;
       left: 0;
@@ -441,7 +528,7 @@
     overflow: hidden;
     position: relative;
     .slide {
-      height: 500px;
+      height: 800px;
       .content-wrapper {
         grid-template-columns: 75px 2fr 1fr;
 
@@ -466,8 +553,8 @@
   /* SMART LIPO *************************************************** */
   .smart-lipo {
     padding: 0 20px !important;
-    background: url("../../img/smart-lipo-bg@2x.jpg") center / cover;
-    height: 600px;
+    background: url("../img/smart-lipo-bg@2x.jpg") center / cover;
+    height: 720px;
     display: flex;
     align-items: center;
     .containerish {
@@ -550,6 +637,22 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+  .nav-item {
+    margin-right: 1.3rem !important;
+
+    // font-family: $font-primary !important;
+    .nav-link {
+      font-family: $font-tertiary !important;
+      color: $color-dark !important;
+      font-size: 0.875rem;
+      font-weight: 600;
+      font-style: normal;
+
+      &:hover {
+        color: $color-main !important;
+      }
+    }
+  }
   /* HERO ********************************************************* */
 
   /* EVENT ******************************************************** */
@@ -598,6 +701,42 @@
     }
   }
   /* TESTIMONIALS ************************************************* */
+  .testimonials {
+    padding: 40px 20px 0 20px;
+    height: 900px;
+
+    .containerish {
+      img {
+        margin-bottom: 2rem;
+      }
+      .testimonial-container {
+        display: flex;
+        flex-direction: column;
+
+        .testimonial {
+          .stars {
+            max-width: 50%;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+    /* LATEST BLOG */
+    .blog-post {
+      background: url("../img/blog-img@2x.jpg") center / cover;
+      padding: 2rem 1rem;
+      width: 860px;
+      margin: 0 auto;
+      margin-top: 6rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      p.blog-title {
+        margin: 2rem 0;
+      }
+    }
+  }
 
   /* APPOINTMENTS ************************************************* */
   /* FOOTER ******************************************************* */
@@ -607,7 +746,58 @@
 /* SUPER LARGE BREAKPOINT (IMAC STATUS 1900px and up) */
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 1900px) {
+  .navbar-wrapper {
+    .logo-desktop {
+      display: block;
+      width: 30%;
+      height: 123px;
+      background-image: radial-gradient(#a04f8a, #642853);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 25;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 2rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .nav-item {
+    margin-right: 2rem !important;
+
+    // font-family: $font-primary !important;
+    .nav-link {
+      font-family: $font-tertiary !important;
+      color: $color-dark !important;
+      font-size: 0.875rem;
+      font-weight: 600;
+      font-style: normal;
+
+      &:hover {
+        color: $color-main !important;
+      }
+    }
+  }
   /* HERO ********************************************************* */
+  .hero {
+    overflow: hidden;
+    position: relative;
+    .slide {
+      height: 900px;
+      .content-wrapper {
+        grid-template-columns: 75px 2fr 1fr;
+
+        .slide-info {
+          grid-column: 2 / 3;
+        }
+      }
+    }
+  }
   /* EVENT ******************************************************** */
   /* BIO ********************************************************** */
   /* SEARCH ******************************************************* */
@@ -627,6 +817,42 @@
     }
   }
   /* TESTIMONIALS ************************************************* */
+  .testimonials {
+    padding: 80px 20px 0 20px;
+    height: 75vh;
+
+    .containerish {
+      img {
+        margin-bottom: 2rem;
+      }
+      .testimonial-container {
+        display: flex;
+        flex-direction: column;
+
+        .testimonial {
+          .stars {
+            max-width: 50%;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+    /* LATEST BLOG */
+    .blog-post {
+      background: url("../img/blog-img@2x.jpg") center / cover;
+      padding: 2rem 1rem;
+      width: 860px;
+      margin: 0 auto;
+      margin-top: 10rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      p.blog-title {
+        margin: 2rem 0;
+      }
+    }
+  }
   /* APPOINTMENTS ************************************************* */
   /* FOOTER ******************************************************* */
 }

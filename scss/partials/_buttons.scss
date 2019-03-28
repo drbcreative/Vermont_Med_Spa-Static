@@ -119,7 +119,7 @@
   color: $color-main;
 
   &:hover {
-    color: main;
+    color: $color-main;
     background-color: darken(#fff, 15);
     border: 1px solid darken(#fff, 15);
     text-decoration: none;

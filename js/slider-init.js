@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  $(".testimonial-slider").slick({
+  $(".testimonial-container").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
-    dots: false,
+    dots: true,
     autoplay: true,
     arrows: false
   });
@@ -11,7 +11,7 @@ $(document).ready(function() {
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: !0,
-    dots: !1,
+    dots: false,
     autoplay: true,
     arrows: false,
     autoplaySpeed: 5000
